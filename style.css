@@ -55,14 +55,6 @@ h1 {
     color: #6495ED;
 }
 
-.tree-container {
-    display: flex;
-    justify-content: center;
-    border: none;
-    outline: none;
-    width: 100%;
-}
-
 .tree-image {
     width: min(585px, 90vw);
     height: auto;
