@@ -55,14 +55,6 @@ h1 {
     color: #6495ED;
 }
 
-.tree-image {
-    width: min(585px, 90vw);
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 0 4px 16px rgba(30, 90, 168, 0.08);
-    }
-
 .subtitle {
     font-family: 'Fredoka', sans-serif;
     font-size: clamp(16px, 4vw, 22px);
@@ -176,21 +168,9 @@ h1 {
         align-items: center;
         margin-top: clamp(32px, 8vh, 64px);
     }
-    .tree-container {
-        grid-area: tree;
-        align-self: center;
-        justify-self: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    
     }
-    .tree-image {
-        width: min(450px, 60vw);
-        border-radius: 16px;
-        box-shadow: 0 4px 16px rgba(30, 90, 168, 0.08);
-        border: 2px solid #6495ED;
-    }
+    
     .info-section {
         grid-area: info;
         gap: clamp(15px, 3vh, 25px);
@@ -221,8 +201,7 @@ h1 {
     h1 {
         font-size: clamp(35px, 5vw, 60px);
     }
-    .tree-image {
-        width: min(380px, 55vw);
+    
     }
     .subtitle {
         font-size: clamp(15px, 3vw, 18px);
@@ -310,12 +289,7 @@ h1 {
     h1 {
         font-size: clamp(50px, 12vw, 100px);
     }
-    .tree-image {
-        width: min(585px, 90vw);
-        border-radius: 16px;
-        box-shadow: 0 4px 16px rgba(30, 90, 168, 0.08);
-        border: 2px solid #6495ED;
-    }
+    
     .info-section {
         gap: clamp(40px, 8vh, 80px);
     }
