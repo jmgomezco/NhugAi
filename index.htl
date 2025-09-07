@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NhugAi</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- Google Fonts - Bubblegum Sans solo para el título -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Fredoka: moderna, legible y sin errores de glifos -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-container">
+        <div class="title-section">
+            <h1><span class="nhug">Nhug</span><span class="ai">Ai</span></h1>
+        </div>
+        
+        <div class="tree-container">
+            <img 
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAABpCAYAAABMKNy7AAAACXBIWXMAAAsTAAALEwEAmpwYAAACzElEQVR4nO3cQW7bMBAG0cR4/1/7W6fI7Qz7b2qpjJqg9v7TAqk7kKQpKzZ/5d4i1Y2fR7vG9vH7fJ6w5D4P8++nC+Xo2T8vL9p+8w2fL9fHLH/hM/7z+6YVQKQFoExAJQFkBpAVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUBZAZgVgTEAlAWQGkBWBMQCUA2gX4B4qU5K08IhAAAAABJRU5ErkJggg==" 
+              alt="Árbol NhugAi" 
+              class="tree-image"
+            >
+        </div>
+        
+        <div class="info-section">
+            <p class="subtitle">Soluciones API con modelos de lenguaje NLP y LLM</p>
+            
+            <div class="button-container">
+                <button class="email-button" onclick="sendEmail()">
+                    <svg class="envelope-icon" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="3" width="22" height="12" stroke="#f5f5f5" stroke-width="2" fill="none"/>
+                        <polyline points="1,3 12,10 23,3" stroke="#f5f5f5" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                
+                <button class="cie10-button" onclick="callCie10Api()">
+                    cie-10
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
