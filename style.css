@@ -60,10 +60,8 @@ h1 {
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 16px;
     box-shadow: 0 4px 16px rgba(30, 90, 168, 0.08);
-    border: 2px solid #6495ED;
-}
+    }
 
 .subtitle {
     font-family: 'Fredoka', sans-serif;
