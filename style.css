@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 800px;
+    min-height: 100vh;
+    gap: clamp(15px, 3vh, 30px);
+}
+
+.title-section {
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: clamp(50px, 12vw, 100px);
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.nhug {
+    color: #1E5AA8;
+}
+
+.ai {
+    color: #6495ED;
+}
+
+.tree-container {
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.tree-image {
+    width: min(585px, 90vw);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(16px, 4vw, 22px);
+    font-weight: 400;
+    color: #1E5AA8;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.info-section {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(40px, 8vh, 80px);
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(10px, 2vh, 20px);
+    width: 100%;
+}
+
+.email-button {
+    background-color: #6495ED;
+    width: clamp(80px, 15vw, 3cm);
+    height: clamp(60px, 12vw, 2cm);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.email-button:hover {
+    background-color: #5a86d4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.email-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.envelope-icon {
+    width: clamp(24px, 5vw, 1.2cm);
+    height: clamp(18px, 4vw, 0.9cm);
+    position: relative;
+}
+
+.cie10-button {
+    background-color: #e4b863;
+    width: clamp(80px, 15vw, 3cm);
+    height: clamp(60px, 12vw, 2cm);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(18px, 4vw, 30px);
+    font-weight: 400;
+    color: white;
+}
+
+.cie10-button:hover {
+    background-color: #d9a651;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cie10-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries igual al original, puedes copiar los tuyos si quieres modificar */
+@media (min-width: 1024px) and (max-height: 800px) {
+    .content-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "title"
+            "tree" 
+            "info";
+        gap: clamp(8px, 1.5vh, 15px);
+        padding: 8px 20px;
+        justify-items: center;
+        align-items: center;
+        place-items: center;
+    }
+    .title-section {
+        grid-area: title;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tree-container {
+        grid-area: tree;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .info-section {
+        grid-area: info;
+        gap: clamp(15px, 3vh, 25px);
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    h1 {
+        font-size: clamp(40px, 6vw, 70px);
+    }
+    .tree-image {
+        width: min(450px, 60vw);
+    }
+    .subtitle {
+        font-size: clamp(16px, 3.5vw, 20px);
+    }
+}
+
+/* ... el resto de media queries igual que tu archivo original ... */
+@media (min-width: 1024px) and (max-height: 700px) {
+    .content-container {
+        gap: clamp(5px, 1vh, 10px);
+        padding: 5px 20px;
+    }
+    .info-section {
+        gap: clamp(10px, 2vh, 18px);
+    }
+    h1 {
+        font-size: clamp(35px, 5vw, 60px);
+    }
+    .tree-image {
+        width: min(380px, 55vw);
+    }
+    .subtitle {
+        font-size: clamp(15px, 3vw, 18px);
+    }
+    .button-container {
+        gap: clamp(8px, 1.5vh, 15px);
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 600px) {
+    .content-container {
+        gap: clamp(3px, 0.8vh, 8px);
+        padding: 3px 20px;
+    }
+    .info-section {
+        gap: clamp(8px, 1.5vh, 12px);
+    }
+    h1 {
+        font-size: clamp(30px, 4vw, 50px);
+    }
+    .tree-image {
+        width: min(320px, 50vw);
+    }
+    .subtitle {
+        font-size: clamp(14px, 2.5vw, 16px);
+        padding: 0 10px;
+    }
+    .button-container {
+        gap: clamp(5px, 1vh, 10px);
+    }
+    .email-button, .cie10-button {
+        width: clamp(70px, 12vw, 2.5cm);
+        height: clamp(50px, 10vw, 1.8cm);
+    }
+    .cie10-button {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 550px) {
+    .content-container {
+        gap: clamp(2px, 0.5vh, 5px);
+        padding: 2px 15px;
+    }
+    .info-section {
+        gap: clamp(5px, 1vh, 8px);
+    }
+    h1 {
+        font-size: clamp(25px, 3.5vw, 45px);
+        line-height: 0.7;
+    }
+    .tree-image {
+        width: min(280px, 45vw);
+    }
+    .subtitle {
+        font-size: clamp(12px, 2vw, 14px);
+        padding: 0 5px;
+    }
+    .button-container {
+        gap: clamp(3px, 0.8vh, 8px);
+    }
+    .email-button, .cie10-button {
+        width: clamp(60px, 10vw, 2cm);
+        height: clamp(40px, 8vw, 1.5cm);
+    }
+    .cie10-button {
+        font-size: clamp(14px, 2.5vw, 20px);
+    }
+    .envelope-icon {
+        width: clamp(20px, 4vw, 1cm);
+        height: clamp(15px, 3vw, 0.8cm);
+    }
+}
+
+@media (aspect-ratio > 16/9) and (max-height: 700px) and (min-width: 1024px) {
+    h1 {
+        font-size: clamp(28px, 3vw, 50px);
+    }
+    .tree-image {
+        width: min(300px, 40vw);
+    }
+    .content-container {
+        gap: clamp(3px, 0.8vh, 8px);
+    }
+    .info-section {
+        gap: clamp(6px, 1.2vh, 10px);
+    }
+}
+
+@media (max-width: 1023px) {
+    .content-container {
+        display: flex !important;
+        flex-direction: column;
+        gap: clamp(15px, 3vh, 30px);
+    }
+    h1 {
+        font-size: clamp(50px, 12vw, 100px);
+    }
+    .tree-image {
+        width: min(585px, 90vw);
+    }
+    .info-section {
+        gap: clamp(40px, 8vh, 80px);
+    }
+    .subtitle {
+        font-size: clamp(16px, 4vw, 22px);
+    }
+}
