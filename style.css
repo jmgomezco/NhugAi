@@ -24,7 +24,7 @@ body {
     width: 100%;
     max-width: 800px;
     min-height: 100vh;
-    gap: clamp(5px, 1.5vh, 5px); /* Espacio reducido */
+    gap: clamp(10px, 1.5vh, 10px); /* Espacio reducido */
 }
 
 
@@ -73,7 +73,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(5px, 1.5vh, 5px); /* Espacio reducido entre subtítulo y botones */
+    gap: clamp(10px, 1.5vh, 10px); /* Espacio reducido entre subtítulo y botones */
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(5px, 1.5vh, 5px);
+    gap: clamp(10px, 1.5vh, 10px);
     width: 100%;
 }
 
