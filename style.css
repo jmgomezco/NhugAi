@@ -67,14 +67,27 @@ h1 {
     padding: 0 20px;
 }
 
-.info-section {
-    flex: 1;
-    min-width: 200px;
+
+.subtitle {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(5px, 1.5vw, 5px);
+    font-weight: 400;
+    color: #1E5AA8;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+.image {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(20px, 1.5vh, 20px); /* Espacio reducido entre subtítulo y botones */
-    width: 100%;
+    gap: clamp(30px, 1.5vh, 30px);
+    width: 100%;        
 }
 
 .button-container {
