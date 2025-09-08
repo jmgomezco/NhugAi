@@ -24,7 +24,7 @@ body {
     width: 100%;
     max-width: 800px;
     min-height: 100vh;
-    gap: clamp(5px, 1.5vh, 5px); /* Espacio reducido */
+    gap: clamp(2px, 1.5vh, 2px); /* Espacio reducido */
 }
 
 
@@ -58,7 +58,7 @@ h1 {
 
 .subtitle {
     font-family: 'Fredoka', sans-serif;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: clamp(5px, 1.5vw, 5px);
     font-weight: 400;
     color: #1E5AA8;
     text-align: center;
@@ -73,7 +73,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(5px, 1vh, 5px); /* Espacio reducido entre subtítulo y botones */
+    gap: clamp(5px, 1.5vh, 5px); /* Espacio reducido entre subtítulo y botones */
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(10px, 2vh, 20px);
+    gap: clamp(5px, 1.5vh, 5px);
     width: 100%;
 }
 
