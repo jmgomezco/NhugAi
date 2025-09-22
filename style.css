@@ -26,13 +26,13 @@ body {
     width: 100%;
     max-width: 420px;
     margin: 0 auto;
-    margin-top: 5.5vh; /* Distancia cómoda del borde superior */
+    margin-top: 8vh; /* Aumenta la distancia del borde superior */
 }
 
 h1 {
     font-family: 'Orbitron', Arial, sans-serif;;
     font-size: clamp(50px, 10vw, 100px);
-    font-weight: 450;
+    font-weight: 700; /* Aumenta el grosor de la fuente */
     margin: 0 0 4.5rem 0; /* Incrementa la distancia con el subtítulo */
     padding: 0;
     line-height: 0.8;
