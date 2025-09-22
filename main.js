@@ -1,12 +1,11 @@
 function sendEmail() {
-    window.location.href = "mailto:nhugai@nhug.ai";
+    window.open("mailto:nhugai@nhug.ai", "_blank");
 }
 
 function callCie10Api() {
-    // Acción para cie-10, personalizar según necesidades
-    alert("API cie-10");
+    window.open("https://cie10.nhug.ai", "_blank");
 }
 
 function goToNhugIn() {
-    window.location.href = "https://in.nhug.ai";
+    window.open("https://in.nhug.ai", "_blank");
 }
