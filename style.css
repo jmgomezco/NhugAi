@@ -31,7 +31,7 @@ body {
 
 h1 {
     font-family: 'Orbitron', Arial, sans-serif;;
-    font-size: clamp(50px, 10vw, 100px);
+    font-size: clamp(60px, 12vw, 120px);
     font-weight: 700; /* Aumenta el grosor de la fuente */
     margin: 0 0 4.5rem 0; /* Incrementa la distancia con el subtítulo */
     padding: 0;
