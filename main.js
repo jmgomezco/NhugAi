@@ -1,5 +1,5 @@
 function sendEmail() {
-    window.open("mailto:nhugai@nhug.ai", '', 'width=1000,height=1000');
+    window.open("mailto:nhugai@nhug.ai", '', 'width=1920,height=1080');
    }
 
 function callCie10Api() {
