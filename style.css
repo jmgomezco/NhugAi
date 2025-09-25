@@ -84,7 +84,7 @@ button, .cie10-button, .in-nhugai-button, .email-button {
 }
 
 button:hover, .cie10-button:hover, .in-nhugai-button:hover, .email-button:hover {
-    background: #222;
+    background: #808080;
 }
 
 .email-button {
