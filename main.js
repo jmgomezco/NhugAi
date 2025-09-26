@@ -7,5 +7,5 @@ function callCie10Api() {
     }
 
 function goToNhugIn() {
-    window.open("https://in.nhug.ai", '', 'width=1920,height=1080');
+    window.open("https://staging.d1uezq6nrryjnv.amplifyapp.com", '', 'width=1920,height=1080');
    }
