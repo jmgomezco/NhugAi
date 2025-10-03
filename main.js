@@ -9,10 +9,6 @@ function callCie10Api() {
     openMaximized(url);
 }
 
-function goToNhugIn() {
-    const url = "https://staging.d1uezq6nrryjnv.amplifyapp.com";
-    openMaximized(url);
-}
 
 // Función auxiliar para abrir ventana maximizada según la pantalla del usuario
 function openMaximized(url) {
