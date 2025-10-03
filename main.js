@@ -1,14 +1,13 @@
 function sendEmail() {
-    // Forzar nueva ventana maximizada en cualquier tipo de pantalla
+    // Abrir mail en una ventana de 800x800 píxeles
     const url = "mailto:nhugai@nhug.ai";
-    openMaximized(url);
+    openSmall(url);
 }
 
 function callCie10Api() {
     const url = "https://cie10.nhug.net";
     openMaximized(url);
 }
-
 
 // Función auxiliar para abrir ventana maximizada según la pantalla del usuario
 function openMaximized(url) {
@@ -21,5 +20,20 @@ function openMaximized(url) {
         url,
         '_blank',
         `width=${screenWidth},height=${screenHeight},left=0,top=0`
+    );
+}
+
+// Nueva función para abrir una ventana de 800x800 píxeles centrada
+function openSmall(url) {
+    // Tamaño 800x800 píxeles, centrada
+    const width = 800;
+    const height = 800;
+    const left = (window.screen.availWidth - width) / 2;
+    const top = (window.screen.availHeight - height) / 2;
+
+    window.open(
+        url,
+        '_blank',
+        `width=${width},height=${height},left=${left},top=${top},resizable=yes,scrollbars=yes`
     );
 }
