@@ -5,7 +5,7 @@ function sendEmail() {
 }
 
 function callCie10Api() {
-    const url = "https://cie10.nhug.net";
+    const url = "https://cie10.nhug.ai";
     openMaximized(url);
 }
 
