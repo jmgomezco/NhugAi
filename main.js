@@ -1,6 +1,6 @@
 function sendEmail() {
     // Abrir mail en una ventana de 800x800 píxeles
-    const url = "mailto:nhugai@nhug.ai";
+    const url = "mailto:nhug@nhug.net";
     openSmall(url);
 }
 
