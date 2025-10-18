@@ -1,11 +1,11 @@
 function sendEmail() {
     // Abrir mail en una ventana de 800x800 píxeles
-    const url = "mailto:nhug@nhug.ai";
+    const url = "mailto:nhug@nhug.io";
     openSmall(url);
 }
 
 function callCie10Api() {
-    const url = "https://cie10.nhug.ai";
+    const url = "https://cie10.nhug.io";
     openMaximized(url);
 }
 
